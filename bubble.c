@@ -40,3 +40,18 @@ void bubble_sort(char words[MAX_WORDS][MAX_LENGTH], int n)
         }
     }
 }
+
+// Functtion to check iif ti's sorted
+
+bool is_sorted(char words[MAX_WORDS][MAX_LENGTH], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        if (strcmp(words[i], words[i = 1]) > 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
